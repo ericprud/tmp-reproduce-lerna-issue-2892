@@ -1,7 +1,7 @@
 {
-  "name": "shex-lerna-repo",
+  "name": "reproduce-lerna-lerna-2892",
   "version": "1.0.0-alpha.6",
-  "description": "lerna repo to reproduce ",
+  "description": "lerna repo to reproduce https://github.com/lerna/lerna/issues/2892",
   "author": {
     "name": "Eric Prud'hommeaux",
     "email": "eric@w3.org",
