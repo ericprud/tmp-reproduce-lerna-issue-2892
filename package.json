@@ -1,0 +1,25 @@
+{
+  "name": "shex-lerna-repo",
+  "version": "1.0.0-alpha.6",
+  "description": "lerna repo to reproduce ",
+  "author": {
+    "name": "Eric Prud'hommeaux",
+    "email": "eric@w3.org",
+    "url": "http://www.w3.org/People/Eric/"
+  },
+  "keywords": [ "shex", "shape expressions", "rdf", "query", "parser" ],
+  "workspaces": { "packages": [ "packages/*" ] },
+  "license": "MIT",
+  "engines": { "node": ">=0.10.0" },
+  "scripts": {
+    "test": "(cd packages && for d in *; do node $d/test/test-$d.js; done)"
+  },
+  "private": true,
+  "publishConfig": {
+    "access": "private"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shexSpec/shex.js"
+  }
+}
