@@ -7,27 +7,14 @@
     "email": "eric@w3.org",
     "url": "http://www.w3.org/People/Eric/"
   },
-  "keywords": [
-    "shex",
-    "shape expressions",
-    "rdf",
-    "query",
-    "parser"
-  ],
+  "keywords": [ "shex", "shape expressions", "rdf", "query", "parser" ],
   "license": "MIT",
   "main": "./shex-util.js",
-  "files": [
-    "./tools/common-test-infrastructure.js"
-  ],
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "devDependencies": {
     "@shexjs/parser": "1.0.0-alpha.6"
   },
   "scripts": {
-    "test": "cd .. && mocha -C -R dot",
-    "browser": "browserify shex.js -s ShEx -o browser/shex-util-browserify.js && uglifyjs browser/shex-util-browserify.js --comments -mco browser/shex-util-browserify.min.js"
+    "test": "node test/test-shex-util.js"
   },
   "publishConfig": {
     "access": "public"
@@ -35,8 +22,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/shexSpec/shex.js.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shexSpec/grammar/issues"
   }
 }

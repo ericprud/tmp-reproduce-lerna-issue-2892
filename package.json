@@ -8,11 +8,9 @@
     "url": "http://www.w3.org/People/Eric/"
   },
   "keywords": [ "shex", "shape expressions", "rdf", "query", "parser" ],
-  "workspaces": { "packages": [ "packages/*" ] },
   "license": "MIT",
-  "engines": { "node": ">=0.10.0" },
   "scripts": {
-    "test": "(cd packages && for d in *; do node $d/test/test-$d.js; done)"
+    "test": "lerna run test"
   },
   "private": true,
   "publishConfig": {
